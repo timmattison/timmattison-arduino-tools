@@ -41,7 +41,7 @@ my $imageYSize = $image->Get('height');
 if(($imageXSize != $X_SIZE) || ($imageYSize != $Y_SIZE)) {
   # No, scale it.  This can be ugly if you don't use a square image.
   print "Resizing from $imageXSize, $imageYSize to $X_SIZE, $Y_SIZE\n";
-  $image->Resize("Geometry=>'$imageXSize,$imageYSize'");
+  $image->Resize("Geometry=>'$X_SIZE,$Y_SIZE'");
 }
 
 # Create the output text array
